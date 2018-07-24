@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	. "github.com/MorpheoOrg/morpheo-compute/worker"
-	"github.com/MorpheoOrg/morpheo-go-packages/client"
-	"github.com/MorpheoOrg/morpheo-go-packages/common"
+	. "github.com/UrbanStackOrg/urbanstack-compute/worker"
+	"github.com/UrbanStackOrg/urbanstack-go-packages/client"
+	"github.com/UrbanStackOrg/urbanstack-go-packages/common"
 	"github.com/satori/go.uuid"
 	"github.com/stretchr/testify/assert"
 )
@@ -65,7 +65,7 @@ func TestMain(m *testing.M) {
 	}
 
 	// Let's finally create our worker
-	tmpPathData = filepath.Join(os.TempDir(), "morpheo_tmp_data")
+	tmpPathData = filepath.Join(os.TempDir(), "urbanstack_tmp_data")
 	worker = NewWorker(
 		tmpPathData, "train", "test", "untargeted_test", "pred", "perf", "model",
 		"problem", "algo", containerRuntime,
@@ -134,7 +134,7 @@ func TestHandleLearn(t *testing.T) {
 // TargzedMock create a Readcloser which can be ungzip-ed
 func TargzedMock() (io.ReadCloser, error) {
 	// Create tmp file
-	tmpPath := filepath.Join(os.TempDir(), "morpheo_mock")
+	tmpPath := filepath.Join(os.TempDir(), "urbanstack_mock")
 	if err := ioutil.WriteFile(tmpPath, []byte("mock"), 0777); err != nil {
 		return nil, fmt.Errorf("Error writing file: %s", err)
 	}

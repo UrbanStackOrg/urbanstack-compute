@@ -1,9 +1,9 @@
-Morpheo-Compute: a container-based ML task queue
+UrbanStack-Compute: a container-based ML task queue
 =================================================
 
 Compute aims at providing a machine learning HTTP API and asynchronous task
 queue that runs training and prediction jobs (possibly other jobs) in an
-asynchronous way. It is part of the [Morpheo project](https://morpheoorg.github.io/morpheo/modules/introduction.html).
+asynchronous way. It is part of the [UrbanStack project](https://urbanstackorg.github.io/urbanstack/modules/introduction.html).
 
 Design overview
 ---------------
@@ -15,7 +15,7 @@ Documentation
 
 * [The compute API](./api)
 * [The compute work-queue](./worker)
-* [Docker-based workflow](https://morpheoorg.github.io/morpheo/modules/learning.html)
+* [Docker-based workflow](https://urbanstackorg.github.io/urbanstack/modules/learning.html)
 
 TODO
 ----
@@ -36,5 +36,5 @@ fork) under another licence.
 Maintainers
 -----------
 * Étienne Lafarge <etienne_a t_rythm.co>
-* Max-Pol Le Brun <maxpol_a t_morpheo.co>
+* Max-Pol Le Brun <maxpol_a t_urbanstack.co>
 # urbanstack-compute

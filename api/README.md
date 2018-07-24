@@ -1,4 +1,4 @@
-Morpheo: Compute API
+UrbanStack: Compute API
 ====================
 
 The compute API is a simple HTTP API that accepts learning and prediction tasks
@@ -19,7 +19,7 @@ trivial:
  * `POST /learn`: post a learnuplet to this route
 
 The API expects the pred/learn uplets to be posted as JSON strings. Their
-structure is described [here](https://morpheoorg.github.io/morpheo-orchestrator/modules/collections.html).
+structure is described [here](https://urbanstackorg.github.io/urbanstack-orchestrator/modules/collections.html).
 
 Key features
 ------------
@@ -58,4 +58,4 @@ Usage of ./target/compute-api:
 Maintainers
 -----------
 * Étienne Lafarge <etienne@rythm.co>
-* Max-Pol Le Brun <maxpol _at_ morpheo.co>
+* Max-Pol Le Brun <maxpol _at_ urbanstack.co>

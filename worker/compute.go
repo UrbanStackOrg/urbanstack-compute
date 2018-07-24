@@ -1,9 +1,9 @@
 /*
- * Copyright Morpheo Org. 2017
+ * Copyright UrbanStack Org. 2017
  *
- * contact@morpheo.co
+ * contact@urbanstack.co
  *
- * This software is part of the Morpheo project, an open-source machine
+ * This software is part of the UrbanStack project, an open-source machine
  * learning platform.
  *
  * This software is governed by the CeCILL license, compatible with the
@@ -49,8 +49,8 @@ import (
 
 	"github.com/satori/go.uuid"
 
-	"github.com/MorpheoOrg/morpheo-go-packages/client"
-	"github.com/MorpheoOrg/morpheo-go-packages/common"
+	"github.com/UrbanStackOrg/urbanstack-go-packages/client"
+	"github.com/UrbanStackOrg/urbanstack-go-packages/common"
 )
 
 // Worker describes a worker (where it stores its data, which container runtime it uses...).
@@ -58,8 +58,8 @@ import (
 // workflow.
 //
 // For an in-detail understanding of what these different steps do and how, check out Camille's
-// awesome example: https://github.com/MorpheoOrg/hypnogram-wf
-// The doc also gets there in detail: https://morpheoorg.github.io/morpheo/modules/learning.html
+// awesome example: https://github.com/UrbanStackOrg/hypnogram-wf
+// The doc also gets there in detail: https://urbanstackorg.github.io/urbanstack/modules/learning.html
 type Worker struct {
 	ID uuid.UUID
 	// Worker configuration variables
@@ -76,7 +76,7 @@ type Worker struct {
 	// ContainerRuntime abstractions
 	containerRuntime common.ContainerRuntime
 
-	// Morpheo API clients
+	// UrbanStack API clients
 	storage client.Storage
 	peer    client.Peer
 }

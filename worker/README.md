@@ -1,4 +1,4 @@
-Morpheo: Compute Workers
+UrbanStack: Compute Workers
 ========================
 
 Compute workers prepare and execute containerized machine learning workflows.
@@ -10,10 +10,10 @@ evaluated) and runs the training/prediction tasks on the network-isolated
 and sent to the orchestrator.
 
 The specifications of the containers ran by compute is documented
-[here](https://morpheoorg.github.io/morpheo/).
+[here](https://urbanstackorg.github.io/urbanstack/).
 
 Examples *problem workflow* and *submission* containers can be found
-[here](https://github.com/MorpheoOrg/hypnogram-wf).
+[here](https://github.com/UrbanStackOrg/hypnogram-wf).
 
 CLI Arguments
 -------------
